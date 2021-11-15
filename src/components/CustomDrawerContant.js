@@ -32,7 +32,7 @@ const DrawerTest = ({ navigation }) => {
       keyExtractor={({ url }, index) => url}
       renderItem={({ item }) => (
         <Text
-            onPress={() => 
+            onPress={() =>
               navigation.navigate('Pokemons')
             }
           > {item.name}
