@@ -8,10 +8,10 @@ import {
 } from '@react-navigation/drawer';
 import { useNavigation } from '@react-navigation/native';
 
-const DrawerTest = ({ navigation }) => {
+const DrawerTest = () => {
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
-  
+  const navigation = useNavigation();
 
   useEffect( () => {
      async function pokeBall () {
